@@ -47,6 +47,7 @@ body {
 /* header */
 
 .header-page {
+  display: flex;
   background: var(--text-color-white);
   border-bottom: 1px solid #ececec;
 }
@@ -61,9 +62,12 @@ body {
   display: flex;
   margin-left: 93px;
 }
+.nav-list .link:hover,
+.nav-list .link:focus {
+  color: var(--text-color-accent);
+}
 .item {
   display: block;
-  text-align: center;
 }
 .nav-list .item:not(:last-child) {
   margin-right: 50px;
@@ -92,16 +96,9 @@ body {
   display: flex;
   align-items: center;
 }
-.svg-link {
-  fill: current Color;
-  margin-right: 10px;
-}
-.address-list-up .link {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
+
 .address-list-up .item:not(:last-child) {
-  margin-right: 50px;
+  margin-right: 30px;
 }
 .address-list .link,
 .address-list-up .link {
@@ -114,10 +111,18 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.link:hover,
-.link:focus {
+.address-list-up .link:hover,
+.address-list-up .link:focus {
   color: var(--text-color-accent);
   font-style: normal;
+}
+.svg-mail,
+.svg-phone {
+  padding: 0;
+  border: none;
+  fill: currentColor;
+  margin-right: 10px;
+  vertical-align: middle;
 }
 
 /* footer */
@@ -176,10 +181,18 @@ body {
   align-items: center;
   width: 44px;
   height: 44px;
-  color: var(--icon-color);
+  color: var(--text-color-white);
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
 }
+.social-link-footer:hover,
+.social-link-footer:focus {
+  background: var(--text-color-accent);
+}
+.social-icons {
+  fill: currentColor;
+}
+
 .address-list .item:not(:last-child) {
   margin-bottom: 9px;
 }
@@ -239,6 +252,7 @@ body {
   background-color: var(--text-color-accent);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: none;
 }
 .hero-but:hover {
   color: var(--text-color-black);
@@ -364,6 +378,17 @@ body {
   color: var(--icon-color);
   border-radius: 50%;
 }
+.social-item .social-link:hover,
+.social-item .social-link:focus {
+  background: var(--text-color-accent);
+  color: var(--text-color-white);
+}
+.svg-link-card {
+  fill: currentColor;
+}
+.svg-link-card:hover {
+  fill: currentColor;
+}
 .team .conteiner {
   padding-bottom: 94px;
   padding-top: 94px;
@@ -404,6 +429,14 @@ body {
   border: 1px solid var(--icon-color);
   border-radius: 4px;
 }
+.link-clients:hover,
+.link-clients:focus {
+  color: var(--text-color-accent);
+  border: 1px solid var(--text-color-accent);
+}
+.clients-ikon {
+  fill: currentColor;
+}
 
 /* portfolio pege */
 
@@ -433,6 +466,7 @@ body {
   font-style: normal;
   background: #f5f4fa;
   padding: 6px 22px;
+  border: none;
   border-radius: 4px;
   font-weight: 500;
   font-size: 16px;
@@ -463,6 +497,9 @@ body {
 }
 .portfolio-card {
   margin: 15px;
+}
+.portfolio-card:hover,
+.portfolio-card:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }

@@ -99,6 +99,10 @@ body {
 .address-list-up .item:not(:last-child) {
   margin-right: 30px;
 }
+.address-list-up .link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 .address-list .link,
 .address-list-up .link {
   display: block;
@@ -121,7 +125,7 @@ body {
   border: none;
   fill: currentColor;
   margin-right: 10px;
-  vertical-align: middle;
+  vertical-align: auto;
 }
 
 /* footer */

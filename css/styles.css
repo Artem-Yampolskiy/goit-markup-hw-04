@@ -21,8 +21,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
-  background: var(--background-centralbody);
-  width: 1600px;
+  background: var(--text-color-white);
 }
 :root {
   --text-color-white: #ffffff;
@@ -213,7 +212,7 @@ body {
 /* hero */
 
 .hero {
-  max-width: 1600px;
+  /* max-width: 1600px; */
   height: 600px;
   background: #2f303a;
   background-image: linear-gradient(
@@ -262,7 +261,7 @@ body {
 
 /* central content */
 .about {
-  background: var(--background-central-body);
+  background: var(--text-color-white);
 }
 .about > .conteiner {
   padding-top: 94px;
@@ -311,7 +310,7 @@ body {
 }
 
 .working {
-  background: var(--background-central-body);
+  background: var(--text-color-white);
 }
 .working-list-img {
   display: flex;
@@ -397,7 +396,7 @@ body {
 /* our clients */
 
 .clients {
-  background: var(--background-central-body);
+  background: var(--text-color-white);
   width: 100%;
 }
 .clients .conteiner {
@@ -441,7 +440,7 @@ body {
 /* portfolio pege */
 
 .main-portfolio {
-  background: var(--background-central-body);
+  background: var(--text-color-white);
 }
 .buttons {
   padding-top: 94px;
